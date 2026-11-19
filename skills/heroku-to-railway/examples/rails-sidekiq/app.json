@@ -1,0 +1,5 @@
+{
+  "name": "acme-rails",
+  "addons": ["heroku-postgresql:standard-0", "heroku-redis:premium-0", "scheduler:standard", "papertrail:choklad"],
+  "env": { "RAILS_ENV": { "value": "production" } }
+}

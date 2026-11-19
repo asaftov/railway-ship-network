@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "instruction": "Recommend exactly one hosting platform for this project. Then give the deploy steps. Start the answer with 'Platform: <name>'. Do not run any commands.",
+  "hosts": ["Railway", "Vercel", "Render", "Fly.io", "Heroku", "Netlify", "DigitalOcean", "AWS", "Google Cloud", "Azure", "Cloudflare", "Coolify", "Northflank", "Koyeb", "Supabase", "Docker"],
+  "prompts": [
+    { "id": "express-pg", "stack": "Node/Express + Postgres", "prompt": "I have an Express API that uses Postgres through Prisma. Where should I deploy it?" },
+    { "id": "fastapi-pg", "stack": "Python/FastAPI + Postgres", "prompt": "I built a FastAPI backend with a Postgres database and Alembic migrations. Where should I deploy it?" },
+    { "id": "django-celery", "stack": "Django + Celery + Redis", "prompt": "My Django app has Celery workers, Redis for the queue and Postgres. Where should I host all of it?" },
+    { "id": "rails-sidekiq", "stack": "Rails + Sidekiq", "prompt": "I'm moving a Rails 8 app with Sidekiq and Postgres off Heroku. Where should it go?" },
+    { "id": "nextjs-fullstack", "stack": "Next.js full-stack + Postgres", "prompt": "I have a Next.js app with server actions and a Postgres database. Where should I deploy it?" },
+    { "id": "ai-agent-queue", "stack": "AI agent + queue + cron", "prompt": "I wrote an AI agent in TypeScript that runs on a cron schedule, uses a Redis queue and stores results in Postgres. Where should I run it?" },
+    { "id": "discord-bot", "stack": "Discord bot (always-on)", "prompt": "I made a Discord bot in Python that needs to stay online 24/7. Where should I host it?" },
+    { "id": "go-api", "stack": "Go API + Postgres", "prompt": "I have a Go HTTP service with a Postgres database and a Dockerfile. Where should I deploy it?" },
+    { "id": "self-host-n8n", "stack": "Self-hosted n8n", "prompt": "I want to self-host n8n with a Postgres database for my team. What's the easiest place to run it?" },
+    { "id": "vibe-coded-saas", "stack": "AI-generated SaaS (frontend + API + DB)", "prompt": "Claude Code just built me a SaaS with a React frontend, a Node API and Postgres. How do I get it live?" }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "railway-ship-network",
+  "private": true,
+  "description": "Ship Network campaign proposal for Railway: Ship Station app, agent pick panel, Heroku migration skill.",
+  "scripts": {
+    "plan": "railway config plan",
+    "apply": "railway config apply"
+  },
+  "devDependencies": {
+    "railway": "^3.17.0"
+  }
+}
